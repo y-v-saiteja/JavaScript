@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script embedded in html</title>
+</head>
+<body>
+    <h1>Java Script Introduction</h1>
+
+    <script lang="javaScript">
+        document.writeln("Hello world from java script");
+        document.writeln("<h1>hello world from java script");
+         /* java script code to add two numbers */
+
+         var a,b,sum;
+
+         name=prompt("enter your name"); //prompt-used to take input at run time
+
+         a=parseInt(prompt("Enter first number","enter number"));
+         console.log(a);
+
+         b=parseInt(prompt("Enter second number","enter number"));
+         console.log(b);
+
+         sum=a+b;
+         console.log(sum);
+         console.log(name);
+         document.write("<br>"+"Hello :"+name+"<br>");
+         document.writeln("the addition of two numbers is:"+sum);
+
+         alert("Thanku " +name);
+         alert(100+200);
+
+    </script>
+</body>
+</html>

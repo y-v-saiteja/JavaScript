@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> java script dowhile loop </title>
+</head>
+<body>
+    <script>
+        const MIN=1;
+        const MAX=15;
+
+        let secretNumber=Math.floor(Math.random() * (MAX - MIN +1)) + MIN;
+        document.writeln(Math.random());
+        let guesses=0;
+        let hint='';
+        let number=0;
+            do{
+                let input=prompt(`please enter a number between ${MIN} and ${MAX}  ` +hint);
+                //get the integer
+                number=parseInt(input);
+                //
+                guesses++;
+                if(number>secretNumber){
+                    hint=' ,less than'+number;
+
+                }
+                else if(number<secretNumber){
+                       hint=' and greater than' +number
+                }
+
+                else if(number==secretNumber){
+                    alert(`bravo you are correct after ${guesses} gues(es)`);
+                }
+            }
+                while(number!=secretNumber)
+
+                
+    </script>
+</body>
+</html>
